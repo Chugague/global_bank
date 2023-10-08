@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="mb-3">
+                    <a href="nuevatransferencia.html" class="btn btn-primary btn-block">Nueva Transferencia</a>
+                </div>
+                <div class="mb-3">
+                    <a href="modificarDatos.html " class="btn btn-primary btn-block">Modificar Perfil</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h2>Últimas Transferencias</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID Transferencia</th>
+                            <th>Fecha</th>
+                            <th>Comentario</th>
+                            <th>Monto</th>
+                            <th>Destinatario</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-transferencias">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script>verificarSesion()</script>
+</body>
+</html>
